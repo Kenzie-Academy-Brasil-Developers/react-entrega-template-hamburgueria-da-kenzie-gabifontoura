@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const StyledCart = styled.ul`
     display: flex;
     flex-direction: column;
-    width: 35%;
-    height: 21rem ;
+    height: 16rem ;
     overflow-y: auto;
     background-color:${({theme}) => theme.colors.colorGrey1};
-    margin: 2rem;
+
 `
 
 export const StyledCartHeader = styled.header`
@@ -19,3 +18,33 @@ export const StyledCartHeader = styled.header`
 
 
 `
+
+export const StyledFlexBoxCart = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 2rem auto;
+    position: fixed;
+    left: 62%;
+    
+`;
+
+export const StyledTotalCart = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    background:${({theme}) => theme.colors.colorGrey1};
+    border-top: 2px solid ${({theme}) => theme.colors.colorGrey2};
+    
+`;
+
+
+export const StyledEmptyCart = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    gap: 1rem;
+ 
+    
+`;

@@ -26,15 +26,18 @@ export const StyledCartCard = styled.li`
 export const StyledFlexBoxColumn = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 0 0.5rem;
+  margin: 0.75rem 0;
 `;
 
 export const StyledFlexBox = styled.div`
   display: flex;
   gap: 1rem;
   overflow: auto;
+  justify-content: space-between;
 `;
+
+

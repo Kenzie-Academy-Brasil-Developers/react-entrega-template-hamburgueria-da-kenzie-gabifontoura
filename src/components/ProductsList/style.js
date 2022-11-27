@@ -4,8 +4,9 @@ export const StyledProductsList = styled.ul`
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 2rem;
-   margin:2rem;
-   width:65%;
+   margin: 2rem 0;
+   width:60%;
+   
    @media (max-width: 900px) {
         grid-template-columns: repeat(2, 1fr);
    }

@@ -35,7 +35,7 @@ const ProductCard = ({ product , addProductToCurrentSale}) => {
           textAlign="left"
           color={({ theme }) => theme.colors.colorBrand1}
         >
-          R${product.price}
+          R$ {product.price.toFixed(2).replace(".", ",")}
         </StyledText>
 
         <StyledButton buttonSize="medium" buttonStyle="primary" onClick={()=> addProductToCurrentSale(product)}>

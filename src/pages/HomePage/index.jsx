@@ -8,7 +8,7 @@ import { useState } from "react";
 import { StyledText } from "../../styles/typography";
 import Cart from "../../components/Cart";
 
-const HomePage = ({ products, setProducts, addProductToCurrentSale , removeProductFromCurrentSale, currentSale}) => {
+const HomePage = ({ products, setProducts, addProductToCurrentSale , removeProductFromCurrentSale, currentSale, setCurrentSale}) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const HomePage = ({ products, setProducts, addProductToCurrentSale , removeProdu
             <StyledHomePageFlexBox>
 
                 <ProductsList addProductToCurrentSale={addProductToCurrentSale}  products={products} />
-                <Cart currentSale={currentSale} addProductToCurrentSale={addProductToCurrentSale} removeProductFromCurrentSale={removeProductFromCurrentSale}/>
+                <Cart currentSale={currentSale} setCurrentSale={setCurrentSale} addProductToCurrentSale={addProductToCurrentSale} removeProductFromCurrentSale={removeProductFromCurrentSale}/>
             </StyledHomePageFlexBox>
             
           </div>
