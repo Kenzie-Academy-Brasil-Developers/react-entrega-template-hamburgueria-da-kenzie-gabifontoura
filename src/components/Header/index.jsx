@@ -30,14 +30,14 @@ const Header = ({
                 </StyledButton>
                 <StyledFlexBoxHeader>
                     <StyledInput
-                    type="text"
+                    type="search"
                     value={search}
                     onChange={(event) => setSearch(event.target.value)}
                     />
                     <StyledAbsolute>
-                    <StyledButton buttonSize="medium" buttonStyle="primary">
-                        Pesquisar
-                    </StyledButton>
+                        <StyledButton buttonSize="medium" buttonStyle="primary">
+                            Pesquisar
+                        </StyledButton>
                     </StyledAbsolute>
                 </StyledFlexBoxHeader>
             </StyledFlexBoxHeader>

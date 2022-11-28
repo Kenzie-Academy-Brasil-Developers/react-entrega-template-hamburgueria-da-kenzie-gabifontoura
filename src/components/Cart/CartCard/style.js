@@ -7,6 +7,8 @@ export const StyledCartCard = styled.li`
   justify-content: space-between;
   position: sticky;
 
+ 
+
   &:hover {
     filter: brightness(1.2);
   }

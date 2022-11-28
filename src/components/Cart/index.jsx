@@ -36,18 +36,18 @@ const Cart = ({ currentSale, setCurrentSale, removeProductFromCurrentSale,addCou
                 addCount={addCount}
                 />
                 ))}
-            </StyledCart>
-            <StyledTotalCart>
-                <StyledFlexBox>
+        </StyledCart>
+        <StyledTotalCart>
+            <StyledFlexBox>
                 <StyledText tag="h4" color={({ theme }) => theme.colors.colorGrey3}>Total</StyledText>
                 <StyledText tag="h4" color={({ theme }) => theme.colors.colorGrey3}>
                     R$ {sum.toFixed(2).replace(".", ",")}
                 </StyledText>
-                </StyledFlexBox>
-                <StyledButton buttonSize="default" buttonStyle="secondary" onClick={()=>setCurrentSale([])}>
-                Remover todos
-                </StyledButton>
-            </StyledTotalCart>
+            </StyledFlexBox>
+            <StyledButton buttonSize="default" buttonStyle="secondary" onClick={()=>setCurrentSale([])}>
+            Remover todos
+            </StyledButton>
+        </StyledTotalCart>
       </>
       : 
       <StyledCart>
