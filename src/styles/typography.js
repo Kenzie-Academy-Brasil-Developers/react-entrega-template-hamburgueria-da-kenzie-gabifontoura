@@ -2,6 +2,8 @@ import styled, { css } from "styled-components";
 
 import BaseText from "../components/BaseText";
 
+
+
 export const StyledText = styled(BaseText)`
   overflow: hidden;
   text-overflow: ellipsis;

@@ -4,7 +4,7 @@ import { StyledButton } from "../../../styles/buttons";
 import { StyledText } from "../../../styles/typography";
 import { StyledCartCard, StyledFlexBox, StyledFlexBoxColumn } from "./style";
 
-const CartCard = ({ selected, removeProductFromCurrentSale }) => {
+const CartCard = ({ selected, removeProductFromCurrentSale, addCount }) => {
   return (
     <StyledCartCard>
       <StyledFlexBox>
@@ -28,10 +28,12 @@ const CartCard = ({ selected, removeProductFromCurrentSale }) => {
           </StyledText>
         </StyledFlexBoxColumn>
       </StyledFlexBox>
+        {selected.count && <span>{selected.count}</span>}
+      <StyledButton onClick={()=> addCount(1, selected)}></StyledButton>
 
       <StyledButton
         color={({ theme }) => theme.colors.colorGrey4}
-        onClick={() => removeProductFromCurrentSale(selected.id)}
+        onClick={() => removeProductFromCurrentSale(selected)}
       >
         Remover
       </StyledButton>

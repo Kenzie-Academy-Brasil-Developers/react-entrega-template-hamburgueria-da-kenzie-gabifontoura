@@ -9,7 +9,7 @@ export const StyledHomePage = styled.section`
 
 export const StyledHomePageFlexBox = styled.div`
     display:flex;
-    
+    margin: 4rem 0;
     justify-content: space-between;
    
 `

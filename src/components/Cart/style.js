@@ -22,10 +22,10 @@ export const StyledCartHeader = styled.header`
 export const StyledFlexBoxCart = styled.div`
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     margin: 2rem auto;
     position: fixed;
-    left: 62%;
+    left: 65%;
     
 `;
 

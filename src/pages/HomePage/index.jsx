@@ -7,8 +7,23 @@ import { StyledHomePage, StyledHomePageFlexBox } from "./style";
 import { useState } from "react";
 import { StyledText } from "../../styles/typography";
 import Cart from "../../components/Cart";
+import { Container } from "../../styles/Container";
 
-const HomePage = ({ products, setProducts, addProductToCurrentSale , removeProductFromCurrentSale, currentSale, setCurrentSale}) => {
+const HomePage = ({
+  products,
+  setProducts,
+  addProductToCurrentSale,
+  removeProductFromCurrentSale,
+  currentSale,
+  setCurrentSale,
+  setSearch,
+  search,
+
+  setDarkMode,
+  darkMode,
+  addCount,
+
+}) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -25,21 +40,36 @@ const HomePage = ({ products, setProducts, addProductToCurrentSale , removeProdu
     })();
   }, []);
 
+  
+
   return (
     <StyledHomePage>
       {loading ? (
-        <StyledText tag="h1" textAlign="center" >Carregando ...</StyledText>
+        <StyledText tag="h1" textAlign="center">
+          Carregando ...
+        </StyledText>
       ) : (
         <>
-          <Header />
-          <div className="container">
+          
+          <Header  setSearch={setSearch} search={search} setDarkMode={setDarkMode} darkMode={darkMode}/>
+          <Container>
             <StyledHomePageFlexBox>
+                <ProductsList
+                  addProductToCurrentSale={addProductToCurrentSale}
+                  products={products}
+                  
+                />
+                <Cart
+                  currentSale={currentSale}
+                  setCurrentSale={setCurrentSale}
+                  addProductToCurrentSale={addProductToCurrentSale}
+                  removeProductFromCurrentSale={removeProductFromCurrentSale}
+                  addCount={addCount}
+                />
+              </StyledHomePageFlexBox>
 
-                <ProductsList addProductToCurrentSale={addProductToCurrentSale}  products={products} />
-                <Cart currentSale={currentSale} setCurrentSale={setCurrentSale} addProductToCurrentSale={addProductToCurrentSale} removeProductFromCurrentSale={removeProductFromCurrentSale}/>
-            </StyledHomePageFlexBox>
-            
-          </div>
+          </Container>
+       
         </>
       )}
     </StyledHomePage>

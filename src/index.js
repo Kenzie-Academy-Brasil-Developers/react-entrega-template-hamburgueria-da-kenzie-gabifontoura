@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { GlobalStyle } from './styles/global';
-import './styles/index.css'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
