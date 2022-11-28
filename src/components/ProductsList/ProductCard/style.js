@@ -8,6 +8,7 @@ export const StyledProductCard = styled.li`
     &:hover {
     filter: brightness(1.2);
     border: 2px solid  ${({theme}) => theme.colors.colorBrand1};
+   
   }
     
     .content{
@@ -15,6 +16,7 @@ export const StyledProductCard = styled.li`
         flex-direction: column;
         gap: 1rem;
         padding: 2rem 1rem;
+        width: 13rem;
 
     }
     img{

@@ -35,9 +35,9 @@ const Header = ({
                     onChange={(event) => setSearch(event.target.value)}
                     />
                     <StyledAbsolute>
-                    <StyledButton buttonSize="medium" buttonStyle="primary">
-                        Pesquisar
-                    </StyledButton>
+                        <StyledButton buttonSize="medium" buttonStyle="primary">
+                            Pesquisar
+                        </StyledButton>
                     </StyledAbsolute>
                 </StyledFlexBoxHeader>
             </StyledFlexBoxHeader>

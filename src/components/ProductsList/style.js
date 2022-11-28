@@ -8,9 +8,14 @@ export const StyledProductsList = styled.ul`
    width:60%;
    
    @media (max-width: 900px) {
+        display: flex;
         grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        overflow-x: auto;
+        width: 100%;
+        margin: 5rem 0 0 1rem;
    }
-   @media (max-width: 450px) {      
+   /* @media (max-width: 450px) {      
         grid-template-columns: 1fr;      
-   }
+   } */
 `;
