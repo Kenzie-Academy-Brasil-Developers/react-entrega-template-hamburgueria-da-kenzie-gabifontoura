@@ -30,7 +30,7 @@ const Header = ({
                 </StyledButton>
                 <StyledFlexBoxHeader>
                     <StyledInput
-                    type="text"
+                    type="search"
                     value={search}
                     onChange={(event) => setSearch(event.target.value)}
                     />

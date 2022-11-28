@@ -18,7 +18,7 @@ const HomePage = ({
   setCurrentSale,
   setSearch,
   search,
-
+  filteredProducts,
   setDarkMode,
   darkMode,
   addCount,
@@ -57,6 +57,7 @@ const HomePage = ({
                 <ProductsList
                   addProductToCurrentSale={addProductToCurrentSale}
                   products={products}
+                  filteredProducts={filteredProducts}
                   
                 />
                 <Cart

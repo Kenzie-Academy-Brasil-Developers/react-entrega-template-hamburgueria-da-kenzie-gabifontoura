@@ -9,7 +9,7 @@ const ProductsList = ({
 }) => {
   return (
     <StyledProductsList>
-      {products.map((product, index) => (
+      {filteredProducts.map((product, index) => (
         <ProductCard
           key={index}
           product={product}

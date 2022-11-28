@@ -19,8 +19,8 @@ function App() {
 
   // const [cartTotal, setCartTotal] = useState(0);
 
-  const filteredProducts = products.filter((product) => product.name.includes(search))
-  console.log(filteredProducts)
+  const filteredProducts = products.filter((product) => product.name.includes(search) || product.category.includes(search))
+ 
 
   useEffect(() => {
     localStorage.setItem("@CURRENT_SALE", JSON.stringify(currentSale));
@@ -69,10 +69,10 @@ function App() {
           setCurrentSale={setCurrentSale}
           search={search}
           setSearch={setSearch}
-          
           setDarkMode={setDarkMode}
           darkMode={darkMode}
           addCount={addCount}
+          filteredProducts={filteredProducts}
         />
 
       </div>

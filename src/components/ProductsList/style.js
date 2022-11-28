@@ -14,6 +14,7 @@ export const StyledProductsList = styled.ul`
         overflow-x: auto;
         width: 100%;
         margin: 5rem 0 0 1rem;
+        gap:1rem
    }
    /* @media (max-width: 450px) {      
         grid-template-columns: 1fr;      
