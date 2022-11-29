@@ -25,7 +25,7 @@ export const StyledFlexBoxCart = styled.div`
   position: fixed;
   left: 65%;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     position: relative;
     width: 100%;
     bottom: 2rem;
