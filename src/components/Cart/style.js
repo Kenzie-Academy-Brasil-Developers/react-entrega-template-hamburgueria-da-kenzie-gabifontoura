@@ -7,8 +7,6 @@ export const StyledCart = styled.ul`
   overflow-y: auto;
   background-color: ${({ theme }) => theme.colors.colorGrey1};
 
-  
-
 `;
 
 export const StyledCartHeader = styled.header`

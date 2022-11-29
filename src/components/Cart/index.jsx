@@ -12,9 +12,9 @@ import {
   StyledTotalCart,
 } from "./style";
 
-const Cart = ({ currentSale, setCurrentSale, removeProductFromCurrentSale,addCount }) => {
+const Cart = ({ currentSale, setCurrentSale, removeProductFromCurrentSale }) => {
   const sum = currentSale.reduce((accumulator, currentValue) => {
-    return accumulator + Number(currentValue.price);
+    return accumulator + (Number(currentValue.price) * currentValue.count);
   }, 0);
 
   return (
@@ -33,7 +33,7 @@ const Cart = ({ currentSale, setCurrentSale, removeProductFromCurrentSale,addCou
                 selected={selected}
                 key={selected.id}
                 removeProductFromCurrentSale={removeProductFromCurrentSale}
-                addCount={addCount}
+               
                 />
                 ))}
         </StyledCart>
