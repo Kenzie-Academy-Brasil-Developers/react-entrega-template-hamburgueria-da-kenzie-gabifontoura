@@ -13,7 +13,7 @@ export const StyledHomePageFlexBox = styled.div`
     justify-content: space-between;
     overflow-x: hidden;
 
-   @media (max-width: 800px) {
+   @media (max-width: 1100px) {
     flex-direction: column;
     
    }
