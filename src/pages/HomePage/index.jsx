@@ -21,7 +21,7 @@ const HomePage = ({
   filteredProducts,
   setDarkMode,
   darkMode,
-  addCount,
+ 
 
 }) => {
   const [loading, setLoading] = useState(false);
@@ -65,7 +65,7 @@ const HomePage = ({
                   setCurrentSale={setCurrentSale}
                   addProductToCurrentSale={addProductToCurrentSale}
                   removeProductFromCurrentSale={removeProductFromCurrentSale}
-                  addCount={addCount}
+                  
                 />
               </StyledHomePageFlexBox>
 

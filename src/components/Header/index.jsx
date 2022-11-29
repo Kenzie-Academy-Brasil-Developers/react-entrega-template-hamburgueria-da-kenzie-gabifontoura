@@ -15,7 +15,7 @@ const Header = ({
   setDarkMode,
   darkMode,
 }) => {
-  console.log(search)
+  
   return (
     <StyledHeader>
         <Container>
