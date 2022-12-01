@@ -4,7 +4,7 @@ import { StyledButton } from "../../../styles/buttons";
 import { StyledText } from "../../../styles/typography";
 import { StyledCartCard, StyledFlexBox, StyledFlexBoxColumn } from "./style";
 
-const CartCard = ({ selected, removeProductFromCurrentSale, addCount }) => {
+const CartCard = ({ selected, removeProductFromCurrentSale}) => {
   return (
     <StyledCartCard>
         <StyledFlexBox>

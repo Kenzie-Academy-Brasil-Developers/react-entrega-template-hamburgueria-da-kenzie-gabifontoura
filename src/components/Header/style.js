@@ -18,6 +18,7 @@ export const StyledHeader = styled.header`
 export const StyledFlexBoxHeader = styled.div`
     display: flex;
     justify-content: space-between;
+
     @media (max-width: 800px) {
         display:flex;
         flex-direction: column;
@@ -27,9 +28,19 @@ export const StyledFlexBoxHeader = styled.div`
         margin: .5rem 0;
         gap:.25rem;
 
-        > img {
+        /* > img {
             width: 8rem;
-        }
+        } */
+
+        
+    .logoPosition{
+        line-height: 0.25rem;
+        overflow: visible;
+    }
+   }
+
+   .logoPosition{
+    margin:.75rem 0;
    }
 `
 export const StyledInput = styled.input`
