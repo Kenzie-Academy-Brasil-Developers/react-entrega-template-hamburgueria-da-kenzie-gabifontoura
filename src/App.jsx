@@ -6,8 +6,10 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  
   const localStorageCart = localStorage.getItem("@CURRENT_SALE");
+
+  const [darkMode, setDarkMode] = useState(false);
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
   const [currentSale, setCurrentSale] = useState(
@@ -76,7 +78,7 @@ function App() {
   }
 
   // function addCount(count, productId) {
-  //   const newList = products.map((product) => {
+  //   const newList = currentSale.map((product) => {
   //     if (product.id === productId) {
   //       return { ...product, count: count + 1 };
   //     } else {

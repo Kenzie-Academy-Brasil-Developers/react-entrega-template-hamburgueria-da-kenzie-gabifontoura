@@ -6,7 +6,6 @@ import BaseText from "../components/BaseText";
 
 export const StyledText = styled(BaseText)`
   overflow: hidden;
-  text-overflow: ellipsis;
 
   justify-content: ${({ justifyContent }) => justifyContent};
   text-align: ${({ textAlign }) => textAlign};
@@ -38,6 +37,8 @@ export const StyledText = styled(BaseText)`
       case "three":
         return css`
           font-size: var(--font-size-title-3);
+          text-overflow: ellipsis;
+
           @media (max-width: 800px) {
             font-size: 1.5rem;
           }

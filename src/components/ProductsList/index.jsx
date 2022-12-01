@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 import { StyledProductsList } from "./style";
 
 const ProductsList = ({
-  products,
+  
   addProductToCurrentSale,
   filteredProducts,
 }) => {

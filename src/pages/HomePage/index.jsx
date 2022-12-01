@@ -10,7 +10,7 @@ import Cart from "../../components/Cart";
 import { Container } from "../../styles/Container";
 
 const HomePage = ({
-  products,
+ 
   setProducts,
   addProductToCurrentSale,
   removeProductFromCurrentSale,
@@ -56,7 +56,6 @@ const HomePage = ({
             <StyledHomePageFlexBox>
                 <ProductsList
                   addProductToCurrentSale={addProductToCurrentSale}
-                  products={products}
                   filteredProducts={filteredProducts}
                   
                 />
